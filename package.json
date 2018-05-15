@@ -1,0 +1,41 @@
+{
+  "name": "iobroker.hama",
+  "version": "0.6.0",
+  "description": "ioBroker hama Adapter",
+  "author": {
+    "name": "Michael Bernau",
+    "email": "mbernau@bfgs.net"
+  },
+  "contributors": [
+    {
+      "name": "Michael Bernau",
+      "email": "mbernau@bfgs.net"
+    }
+  ],
+  "homepage": "https://github.com/ioBroker/ioBroker.hama",
+  "license": "MIT",
+  "keywords": [
+    "ioBroker",
+    "hama",
+    "Smart Home",
+    "home automation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ioBroker/ioBroker.hama"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "mocha": "^4.1.0",
+    "chai": "^4.1.2"
+  },
+  "main": "main.js",
+  "scripts": {
+    "test": "node node_modules/mocha/bin/mocha --exit"
+  },
+  "bugs": {
+    "url": "https://github.com/ioBroker/ioBroker.hama/issues"
+  },
+  "readmeFilename": "README.md"
+}
