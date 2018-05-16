@@ -34,7 +34,8 @@
 'use strict';
 
 // you have to require the utils module and call adapter function
-var utils =    require(__dirname + '/lib/utils'); // Get common adapter utils
+var utils = require(__dirname + '/lib/utils'); // Get common adapter utils
+var request = require('request');
 
 // you have to call the adapter function and pass a options object
 // name has to be set and has to be equal to adapters folder name and main file name excluding extension
@@ -106,7 +107,7 @@ function main() {
      *
      */
 
-    adapter.setObject('testVariable', {
+    adapter.setObjectNotExists('testVariable', {
         type: 'state',
         common: {
             name: 'testVariable',
@@ -148,6 +149,8 @@ function main() {
         console.log('check group user admin group admin: ' + res);
     });
 
-
-
+    // only stop adapter, if it is a scheduled one
+    //setTimeout(function() {
+    //    adapter.stop();
+    //}, 10000);
 }
